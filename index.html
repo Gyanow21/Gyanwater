@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喝水打卡 | Water Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🥤 喝水打卡</h1>
+    <div class="circle-wrap">
+      <svg class="progress-circle" width="220" height="220">
+        <circle class="bg" cx="110" cy="110" r="95"></circle>
+        <circle class="progress" cx="110" cy="110" r="95"></circle>
+      </svg>
+      <div class="circle-text">
+        <div class="num" id="current">0</div>
+        <div class="tip">/ <span id="goal">2000</span> ml</div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn add-btn" data-ml="200">+200ml</button>
+      <button class="btn add-btn" data-ml="300">+300ml</button>
+      <button class="btn add-btn" data-ml="500">+500ml</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn reset-btn">重置今日</button>
+    </div>
+    <p class="date-text" id="today"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
